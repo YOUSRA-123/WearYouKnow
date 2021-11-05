@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title> WearYouNow</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="/css/style.css">
+      
+       <link href="images/favicon.ico" rel="icon">
+      
+      <link rel="stylesheet" href="css/acceuil.css">
+      
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="/images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="head">
+            <div  class="container">
+               <div class="row ">
+                  <div  class="col-md-6">
+                     <ul class="email_call">
+                        <li><a href="#"><img src="/icon/2.png" alt="#"/>0660672755</a></li>
+                        <li><a href="#"><img src="/icon/1.png" alt="#"/>explorer@um6pventures.com </a></li>
+                     </ul>
+                  </div>
+                  <div  class="col-md-6">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-top acceuilBackground">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                           <div class="limit-box">
+                              <nav class="main-menu">
+                                 <ul class="menu-area-main">
+                                    <li class="active"> <a href="acceuil.html">Home</a> </li>
+                                    <li> <a href="#service">Stages</a> </li>
+                                    <li> <a href="#ourwork">Great Minds</a> </li>
+                                    <li> <a href="#review">Quotes</a> </li>
+                                    
+                                    
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+            
+            
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section">
+               <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
+                  
+                 
+                     <div class="carousel-item active">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row ">
+                                 <div class="col-md-7">
+                                    <div class="text-bg">
+                                       <h1 > WearYouNow? </h1>
+                                       <p>Alzheimer's disease is known primarily for one of the symptoms it causes: memory loss. But other signs can alert you to your health or that of a loved one.</p>
+                                       <a th:href="@{/registration}" >Connect to our app</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+
+                
+            </section>
+         </div>
+      </header>
+      <!-- three box -->
+      <div id="service" class="back_box">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 padd_rile">
+                  <div class="three_box">
+                     <span>01</span>
+                     <h3>Early stage of AD</h3>
+                     <p>In the mild dementia stage, people may experience:
+
+Memory loss of recent events. Individuals may have an especially hard time remembering newly learned information.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 padding_l">
+                  <div class="three_box yellow">
+                     <span class="yellow" >02</span>
+                     <h3>Moderate stage</h3>
+                     <p>During the moderate dementia stage of Alzheimer's disease, people grow more confused and forgetful and begin to need more help with daily activities and self-care. </p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 padd_ri">
+                  <div class="three_box">
+                     <span>03</span>
+                     <h3>Severe  stage</h3>
+                     <p> In  the  final  stage  of  this  disease,  individuals  lose  the  ability  to  respond  to  their  environment,  to  carry  on  a  conversation  and,  eventually,  to  control  movement. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end three box -->
+
+      <!-- ourwork -->
+      <div id="ourwork" class="ourwork">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Alzheimer's discovery</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="main_slider1" class="carousel slide banner-main3" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row d_flex">
+                                    <div class="col-md-4">
+                                       <div class="our">
+                                          <figure><img src="images/our.png" alt="#"/></figure>
+                                          <p>Emil Kraepelin  </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="our">
+                                          <figure><img src="images/our3.png" alt="#"/></figure>
+                                          <p>Alois Alzheimer </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                       <div class="our">
+                                          <figure><img src="images/our2.png" alt="#"/></figure>
+                                          <p>Eugen Bleule  </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+             
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end ourwork -->
+ 
+      <!-- review -->
+      <div id="review" class="review">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Boost Your Brain</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="main_slider" class="carousel slide banner-main2" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <img src="images/rev.jpg" alt="#"/>
+                                 <i><img src="images/2.png" alt="#"/></i>
+                                 <span>Dr. Mehmet Oz</span>
+									<p>You get the health benefits of coffee up through about the first twenty-four ounces. It’s the biggest source of antioxidants for Americans, and we think it prevents Alzheimer’s and Parkinsons as well.</p>
+                                 <a href="https://parade.com/1178790/kaitlin-vogel/alzheimers-quotes/">Read More</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <img src="images/rev1.jpg" alt="#"/>
+                                 <i><img src="images/2.png" alt="#"/></i>
+                                 <span>Renee Fry</span>
+                                 <p>You may share the same memories from your youth with us time and time again, but the sheer joy you show in telling those stories with such a big smile goes beyond making up the loss of new stories.</p>
+	                               <a href="https://parade.com/1178790/kaitlin-vogel/alzheimers-quotes/">Read More</a>
+                                
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <img src="images/rev2.jpg" alt="#"/>
+                                 <i><img src="images/2.png" alt="#"/></i>
+                                 <span>Candy Crowley</span>
+									<p>Alzheimer’s creates a kind of friction that the family needs to be strong for. You have to hold onto things and know what is true in life.</p>
+                                     <a href="https://parade.com/1178790/kaitlin-vogel/alzheimers-quotes/">Read More</a>
+                                
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"> <i class='fa fa-angle-left'></i></a>
+                     <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next"> <i class='fa fa-angle-right'></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end review -->
+      
+      
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      
+      
+   </body>
+</html>

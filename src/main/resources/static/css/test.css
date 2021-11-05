@@ -1,0 +1,126 @@
+
+
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: black;
+     font-size: 14px;
+     font-family: 'poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+
+
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     font-weight: 300;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+
+
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+.head {
+     background: #023041;
+     height: 50px;
+}
+ul.email_call {
+     padding-top: 12px;
+}
+ul.email_call li {
+     display: inline-block;
+}
+ul.email_call li a {
+     color: #fff;
+     padding-right: 60px;
+}
+ul.email_call li a img {
+     padding-right: 10px;
+}
+ul.social_icon {
+     float: right;
+     padding-top: 12px;
+}
+ul.social_icon li {
+     display: inline-block;
+     margin: 0 4px;
+}
+ul.social_icon li a {
+     color: #023041;
+     background: #4ac9f0;
+     width: 28px;
+     height: 28px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 105px;
+     font-size: 17px;
+}
+ul.social_icon li a:hover {
+     color: #fff;
+}

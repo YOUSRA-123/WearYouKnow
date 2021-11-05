@@ -1,0 +1,15 @@
+.acceuilBackground {
+	position: relative;
+	
+}
+
+.acceuilBackground::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: -1;
+	background: url(../images/alzheimer\'s.jpg);
+	filter: blur(2px);
+}

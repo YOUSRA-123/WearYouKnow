@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Boot Thymeleaf Application</title>
+    
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="/css/test.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+	
+    
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+	.dividividiv {
+		display: block !important;
+	}
+}
+</style>
+</head>
+<body >
+
+<header>
+         <!-- header inner -->
+         <div class="head">
+            <div  class="container">
+               <div class="row ">
+                  <div  class="col-md-6">
+                     <ul class="email_call">
+                        <li><a href="#"><img src="/icon/2.png" alt="#"/>0660672855</a></li>
+                        <li><a href="#"><img src="/icon/1.png" alt="#"/>explorer@um6pventures.com </a></li>
+                     </ul>
+                  </div>
+                  <div  class="col-md-6">
+                     <ul class="social_icon">
+                        <li><a href="https://www.facebook.com/yousra.cherif.75"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="https://www.instagram.com/yousra3377/"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/yousracherif1234b/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+
+
+<div style=" text-align: center; width: 100%;  ">
+	<h1 style=" font-size: 20px; text-decoration: underline; text-transform: uppercase; ">
+		List of patients
+	</h1>
+</div>
+
+<div class="dividividiv" style=" display: flex; justify-content: center; align-items: center; height: 90vh ">
+	<div th:each="customer : ${name}" >
+		<form action="#" th:action = "@{/Test(id=${customer.name})}" method="POST">
+		       <button type="submit" name="cutomer" th:text="${customer.name}" style=" display: flex; align-items: center; justify-content: center; width: 180px; height: 60px; cursor: pointer; margin-right: 20px; color: black; background-color: gray; padding: 10px; border-radius: 30px; text-align: center; border: 2px solid white;  "></button>
+		</form>
+	</div>
+</div>
+<!-- <table>
+    <tr>
+    	<th>id</th>
+        <th>is_admin</th>
+        <th>Name</th>
+        <th>Positions</th>
+     
+    </tr>
+    <tr th:each="customer: ${name}">
+        <td th:text="${customer.id}"></td>
+        <td th:text="${customer.is_admin}"></td>
+        <td th:text="${customer.name}"></td>
+        <td th:text="${customer.positions}"></td>
+    
+       
+    </tr>
+    
+    
+</table> -->
+<!-- 
+<ul class="list-group">
+  
+  <li class="list-group-item" th:each="customer : ${name}">
+  <a  th:href="@{'/Pushpin?data=' + ${customer}}" th:text="${customer.name}"></a></li>
+</ul>   -->
+
+
+<!-- <ul>
+<li th:each="customer : ${name}" th:attr="data-value=${customer.name}">
+    <span th:text="${customer.name}"></span>
+    <a href='#' class='close' aria-hidden='true'>&times;</a>
+</li>
+</ul> -->
+<!-- <table>
+
+ <tr>
+        
+        <th>Positions</th>
+     
+    </tr>
+
+    <span th:each="word : ${name}">
+        <td>
+            <tr th:each="position: ${name.positions}">
+                <p th:text="${positions.name}"></p>
+            </tr>
+        <td>
+    </span>
+</table>
+ -->
+</body>
+</html>
